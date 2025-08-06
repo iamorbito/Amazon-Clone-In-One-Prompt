@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Search Results</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navigation Bar (Amazon-like) -->
+    <nav class="bg-gray-800 p-4 shadow-md">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold mr-4">Amazon Clone</a>
+            <div class="flex-grow max-w-xl mx-4">
+                <input type="text" placeholder="Search Amazon Clone" value="headphones" class="w-full p-2 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="profile.html" class="text-white hover:text-yellow-400 transition duration-300">Account</a>
+                <a href="cart.html" class="text-white hover:text-yellow-400 transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.705.707 1.705H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                    Cart
+                </a>
+            </div>
+        </div>
+        <!-- Sub-navigation for workflow pages -->
+        <div class="bg-gray-700 p-2 mt-2">
+            <div class="container mx-auto flex flex-wrap justify-center space-x-4 text-sm">
+                <a href="index.html" class="text-white hover:text-yellow-400 transition duration-300">Home</a>
+                <a href="products.html" class="text-white hover:text-yellow-400 transition duration-300">Products</a>
+                <a href="product-detail.html" class="text-white hover:text-yellow-400 transition duration-300">Product Detail</a>
+                <a href="cart.html" class="text-white hover:text-yellow-400 transition duration-300">Cart</a>
+                <a href="checkout-shipping.html" class="text-white hover:text-yellow-400 transition duration-300">Shipping</a>
+                <a href="checkout-payment.html" class="text-white hover:text-yellow-400 transition duration-300">Payment</a>
+                <a href="order-confirmation.html" class="text-white hover:text-yellow-400 transition duration-300">Confirmation</a>
+                <a href="profile.html" class="text-white hover:text-yellow-400 transition duration-300">Profile</a>
+                <a href="search-results.html" class="text-white font-bold hover:text-yellow-400 transition duration-300">Search Results</a>
+                <a href="help.html" class="text-white hover:text-yellow-400 transition duration-300">Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-8 bg-white shadow-lg rounded-lg my-8">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">Search Results for "headphones"</h1>
+        <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto mb-8">
+            Showing 1-16 of over 1,000 results for "headphones".
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Search Result Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://placehold.co/200x150/90EE90/000000?text=Headphones+A" alt="Noise Cancelling Headphones" class="w-full h-32 object-contain rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-900 truncate">Noise Cancelling Headphones</h2>
+                <p class="text-gray-600 text-sm mb-2">Immersive audio experience with superior comfort.</p>
+                <div class="flex items-center mb-2">
+                    <span class="text-yellow-500">★★★★★</span>
+                    <span class="text-gray-500 text-sm ml-2">(250 reviews)</span>
+                </div>
+                <span class="text-xl font-bold text-red-600">$299.99</span>
+                <a href="product-detail.html" class="block mt-4 bg-yellow-500 text-white text-center py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Search Result Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://placehold.co/200x150/ADD8E6/000000?text=Headphones+B" alt="Wireless Earbuds" class="w-full h-32 object-contain rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-900 truncate">True Wireless Earbuds</h2>
+                <p class="text-gray-600 text-sm mb-2">Compact design with powerful sound and long battery life.</p>
+                <div class="flex items-center mb-2">
+                    <span class="text-yellow-500">★★★★☆</span>
+                    <span class="text-gray-500 text-sm ml-2">(180 reviews)</span>
+                </div>
+                <span class="text-xl font-bold text-red-600">$129.00</span>
+                <a href="product-detail.html" class="block mt-4 bg-yellow-500 text-white text-center py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Search Result Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://placehold.co/200x150/FFDAB9/000000?text=Headphones+C" alt="Gaming Headset" class="w-full h-32 object-contain rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-900 truncate">Pro Gaming Headset</h2>
+                <p class="text-gray-600 text-sm mb-2">Experience immersive gaming audio with crystal clear mic.</p>
+                <div class="flex items-center mb-2">
+                    <span class="text-yellow-500">★★★★★</span>
+                    <span class="text-gray-500 text-sm ml-2">(300 reviews)</span>
+                </div>
+                <span class="text-xl font-bold text-red-600">$89.99</span>
+                <a href="product-detail.html" class="block mt-4 bg-yellow-500 text-white text-center py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300">View Product</a>
+            </div>
+
+            <!-- Search Result Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <img src="https://placehold.co/200x150/D8BFD8/000000?text=Headphones+D" alt="Sport Earbuds" class="w-full h-32 object-contain rounded-md mb-4">
+                <h2 class="text-lg font-semibold text-gray-900 truncate">Sport Earbuds with Secure Fit</h2>
+                <p class="text-gray-600 text-sm mb-2">Designed for active lifestyles, sweatproof and comfortable.</p>
+                <div class="flex items-center mb-2">
+                    <span class="text-yellow-500">★★★★☆</span>
+                    <span class="text-gray-500 text-sm ml-2">(150 reviews)</span>
+                </div>
+                <span class="text-xl font-bold text-red-600">$79.00</span>
+                <a href="product-detail.html" class="block mt-4 bg-yellow-500 text-white text-center py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300">View Product</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-auto">
+        <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>

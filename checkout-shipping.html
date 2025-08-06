@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone - Checkout: Shipping</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f0f2f5;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- Navigation Bar (Amazon-like) -->
+    <nav class="bg-gray-800 p-4 shadow-md">
+        <div class="container mx-auto flex flex-wrap justify-between items-center">
+            <a href="index.html" class="text-white text-2xl font-bold mr-4">Amazon Clone</a>
+            <div class="flex-grow max-w-xl mx-4">
+                <input type="text" placeholder="Search Amazon Clone" class="w-full p-2 rounded-md bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="profile.html" class="text-white hover:text-yellow-400 transition duration-300">Account</a>
+                <a href="cart.html" class="text-white hover:text-yellow-400 transition duration-300 flex items-center">
+                    <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.705.707 1.705H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 0a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                    Cart
+                </a>
+            </div>
+        </div>
+        <!-- Sub-navigation for workflow pages -->
+        <div class="bg-gray-700 p-2 mt-2">
+            <div class="container mx-auto flex flex-wrap justify-center space-x-4 text-sm">
+                <a href="index.html" class="text-white hover:text-yellow-400 transition duration-300">Home</a>
+                <a href="products.html" class="text-white hover:text-yellow-400 transition duration-300">Products</a>
+                <a href="product-detail.html" class="text-white hover:text-yellow-400 transition duration-300">Product Detail</a>
+                <a href="cart.html" class="text-white hover:text-yellow-400 transition duration-300">Cart</a>
+                <a href="checkout-shipping.html" class="text-white font-bold hover:text-yellow-400 transition duration-300">Shipping</a>
+                <a href="checkout-payment.html" class="text-white hover:text-yellow-400 transition duration-300">Payment</a>
+                <a href="order-confirmation.html" class="text-white hover:text-yellow-400 transition duration-300">Confirmation</a>
+                <a href="profile.html" class="text-white hover:text-yellow-400 transition duration-300">Profile</a>
+                <a href="search-results.html" class="text-white hover:text-yellow-400 transition duration-300">Search Results</a>
+                <a href="help.html" class="text-white hover:text-yellow-400 transition duration-300">Help</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto p-8 bg-white shadow-lg rounded-lg my-8">
+        <h1 class="text-4xl font-extrabold text-gray-800 mb-6 text-center">Checkout: Shipping Information</h1>
+
+        <div class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-md">
+            <form>
+                <div class="mb-4">
+                    <label for="fullName" class="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="John Doe">
+                </div>
+                <div class="mb-4">
+                    <label for="address1" class="block text-gray-700 text-sm font-bold mb-2">Address Line 1</label>
+                    <input type="text" id="address1" name="address1" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="123 Main St">
+                </div>
+                <div class="mb-4">
+                    <label for="address2" class="block text-gray-700 text-sm font-bold mb-2">Address Line 2 (Optional)</label>
+                    <input type="text" id="address2" name="address2" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="Apartment, Suite, Unit, etc.">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <label for="city" class="block text-gray-700 text-sm font-bold mb-2">City</label>
+                        <input type="text" id="city" name="city" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="Anytown">
+                    </div>
+                    <div>
+                        <label for="state" class="block text-gray-700 text-sm font-bold mb-2">State / Province</label>
+                        <input type="text" id="state" name="state" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="CA">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <label for="zipCode" class="block text-gray-700 text-sm font-bold mb-2">Zip / Postal Code</label>
+                        <input type="text" id="zipCode" name="zipCode" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500" placeholder="90210">
+                    </div>
+                    <div>
+                        <label for="country" class="block text-gray-700 text-sm font-bold mb-2">Country</label>
+                        <select id="country" name="country" class="shadow border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-yellow-500">
+                            <option value="USA">United States</option>
+                            <option value="CAN">Canada</option>
+                            <option value="GBR">United Kingdom</option>
+                            <option value="IND">India</option>
+                            <!-- Add more countries as needed -->
+                        </select>
+                    </div>
+                </div>
+
+                <a href="checkout-payment.html" class="block w-full bg-yellow-400 text-gray-900 font-bold py-3 px-6 rounded-full text-lg text-center hover:bg-yellow-500 transition duration-300 shadow-md">
+                    Continue to Payment
+                </a>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-6 text-center mt-auto">
+        <p>&copy; 2025 Amazon Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
